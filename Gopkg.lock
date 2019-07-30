@@ -2,99 +2,156 @@
 
 
 [[projects]]
-  digest = "1:f619cb9b07aebe5416262cdd8b86082e8d5bdc5264cb3b615ff858df0b645f97"
+  digest = "1:a98dd2bb6cdcd3320e4c092316cecc5a9a7adcbef79c3c744aa7958efe8484ff"
+  name = "github.com/aws/aws-sdk-go-v2"
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/ec2rolecreds",
+    "aws/endpointcreds",
+    "aws/endpoints",
+    "aws/external",
+    "aws/signer/v4",
+    "aws/stscreds",
+    "internal/awsutil",
+    "internal/ini",
+    "internal/sdk",
+    "private/protocol",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/restxml",
+    "private/protocol/xml",
+    "private/protocol/xml/xmlutil",
+    "service/s3",
+    "service/sts",
+  ]
+  pruneopts = "UT"
+  revision = "5208fda8e296ec2a286fa1b040cb879942a95ada"
+  version = "v0.10.0"
+
+[[projects]]
+  digest = "1:c1100fc71e23b6a32b2c68a5202a848fd13811d5a10b12edb8019c3667d1cd9a"
   name = "github.com/cenkalti/backoff"
   packages = ["."]
-  pruneopts = ""
-  revision = "2ea60e5f094469f9e65adb9cd103795b73ae743e"
-  version = "v2.0.0"
+  pruneopts = "UT"
+  revision = "4b4cebaf850ec58f1bb1fec5bdebdf8501c2bc3f"
+  version = "v3.0.0"
 
 [[projects]]
-  digest = "1:56c130d885a4aacae1dd9c7b71cfe39912c7ebc1ff7d2b46083c8812996dc43b"
+  digest = "1:ffe9824d294da03b391f44e1ae8281281b4afc1bdaa9588c9097785e3af10cec"
   name = "github.com/davecgh/go-spew"
   packages = ["spew"]
-  pruneopts = ""
-  revision = "346938d642f2ec3594ed81d874461961cd0faa76"
-  version = "v1.1.0"
+  pruneopts = "UT"
+  revision = "8991bc29aa16c548c550c7ff78260e27b9ab7c73"
+  version = "v1.1.1"
 
 [[projects]]
-  digest = "1:05334858a0cfb538622a066e065287f63f42bee26a7fda93a789674225057201"
+  digest = "1:af105c7c5dc0b4ae41991f122cae860b9600f7d226072c2a83127048c991660c"
   name = "github.com/hashicorp/go-cleanhttp"
   packages = ["."]
-  pruneopts = ""
-  revision = "e8ab9daed8d1ddd2d3c4efba338fe2eeae2e4f18"
-  version = "v0.5.0"
+  pruneopts = "UT"
+  revision = "eda1e5db218aad1db63ca4642c8906b26bcf2744"
+  version = "v0.5.1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:16503ad296459b0e65fbe60a5f41c097bd325c3f981fd26a5397bb0edbe3e31c"
+  digest = "1:351c9fafe916b099211b6e05749afdf5eef2d9aa297691827825628ec395d8c4"
   name = "github.com/hashicorp/go-retryablehttp"
   packages = ["."]
-  pruneopts = ""
-  revision = "e651d75abec6fbd4f2c09508f72ae7af8a8b7171"
+  pruneopts = "UT"
+  revision = "85a8ee556d7323a4faf0f4c17ee900e9ff1482e8"
+  version = "v0.5.4"
 
 [[projects]]
-  digest = "1:256484dbbcd271f9ecebc6795b2df8cad4c458dd0f5fd82a8c2fa0c29f233411"
+  digest = "1:bb81097a5b62634f3e9fec1014657855610c82d19b9a40c17612e32651e35dca"
+  name = "github.com/jmespath/go-jmespath"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "c2b33e84"
+
+[[projects]]
+  digest = "1:0028cb19b2e4c3112225cd871870f2d9cf49b9b4276531f03438a88e94be86fe"
   name = "github.com/pmezard/go-difflib"
   packages = ["difflib"]
-  pruneopts = ""
+  pruneopts = "UT"
   revision = "792786c7400a136282c1664665ae0a8db921c6c2"
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:dae0d7dd55563fd389e7263a32d2030022ef29cceff941336e53f6520e0308c0"
+  digest = "1:bb495ec276ab82d3dd08504bbc0594a65de8c3b22c6f2aaa92d05b73fbf3a82e"
   name = "github.com/spf13/afero"
   packages = [
     ".",
     "mem",
   ]
-  pruneopts = ""
-  revision = "bb8f1927f2a9d3ab41c9340aa034f6b803f4359c"
-  version = "v1.0.2"
+  pruneopts = "UT"
+  revision = "588a75ec4f32903aa5e39a2619ba6a4631e28424"
+  version = "v1.2.2"
 
 [[projects]]
-  digest = "1:2d0dc026c4aef5e2f3a0e06a4dabe268b840d8f63190cf6894e02134a03f52c5"
+  digest = "1:972c2427413d41a1e06ca4897e8528e5a1622894050e2f527b38ddf0f343f759"
   name = "github.com/stretchr/testify"
   packages = ["assert"]
-  pruneopts = ""
-  revision = "b91bfb9ebec76498946beb6af7c0230c7cc7ba6c"
-  version = "v1.2.0"
+  pruneopts = "UT"
+  revision = "ffdc059bfe9ce6a4e144ba849dbedead332c6053"
+  version = "v1.3.0"
 
 [[projects]]
-  digest = "1:e85837cb04b78f61688c6eba93ea9d14f60d611e2aaf8319999b1a60d2dafbfa"
+  digest = "1:b24d38b282bacf9791408a080f606370efa3d364e4b5fd9ba0f7b87786d3b679"
   name = "github.com/urfave/cli"
   packages = ["."]
-  pruneopts = ""
+  pruneopts = "UT"
   revision = "cfb38830724cc34fedffe9a2a29fb54fa9169cd1"
   version = "v1.20.0"
 
 [[projects]]
   branch = "master"
-  digest = "1:98219b20d296a0031fdb434d30ca6e109623a09530a76cf57e41c94bd1e391a0"
+  digest = "1:16606595d5eea9ec1e11cb3d8230a0089cd3545197e62fe2d3cbf906b8c4402b"
   name = "golang.org/x/net"
-  packages = ["context"]
-  pruneopts = ""
-  revision = "c39426892332e1bb5ec0a434a079bf82f5d30c54"
+  packages = [
+    "http/httpguts",
+    "http2",
+    "http2/hpack",
+    "idna",
+  ]
+  pruneopts = "UT"
+  revision = "ca1201d0de80cfde86cb01aea620983605dfe99b"
 
 [[projects]]
-  branch = "master"
-  digest = "1:9f9562b058a594dae0c8e2388c1a802664111736845bc08885246f0e4bf99bdd"
+  digest = "1:8d8faad6b12a3a4c819a3f9618cb6ee1fa1cfc33253abeeea8b55336721e3405"
   name = "golang.org/x/text"
   packages = [
+    "collate",
+    "collate/build",
+    "internal/colltab",
     "internal/gen",
+    "internal/language",
+    "internal/language/compact",
+    "internal/tag",
     "internal/triegen",
     "internal/ucd",
+    "language",
+    "secure/bidirule",
     "transform",
+    "unicode/bidi",
     "unicode/cldr",
     "unicode/norm",
+    "unicode/rangetable",
   ]
-  pruneopts = ""
-  revision = "e19ae1496984b1c655b8044a65c0300a3c878dd3"
+  pruneopts = "UT"
+  revision = "342b2e1fbaa52c93f31447ad2c6abc048c63e475"
+  version = "v0.3.2"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/aws/aws-sdk-go-v2/aws",
+    "github.com/aws/aws-sdk-go-v2/aws/awserr",
+    "github.com/aws/aws-sdk-go-v2/aws/external",
+    "github.com/aws/aws-sdk-go-v2/service/s3",
     "github.com/cenkalti/backoff",
     "github.com/hashicorp/go-retryablehttp",
     "github.com/spf13/afero",

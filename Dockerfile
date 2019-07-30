@@ -1,4 +1,4 @@
-FROM golang:1.11.5-alpine3.9 as build
+FROM golang:1.12.5-alpine3.9 as build
 WORKDIR /go/src/github.com/ing-bank/flink-deployer/
 COPY . .
 RUN go build ./cmd/cli
@@ -9,3 +9,4 @@ COPY --from=build /go/src/github.com/ing-bank/flink-deployer/cli .
 VOLUME [ "/data/flink" ]
 ENTRYPOINT [ "/flink-deployer/cli" ]
 CMD [ "help" ]
+

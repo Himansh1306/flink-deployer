@@ -22,14 +22,16 @@ services:
     volumes:
       - /tmp/flink-deployer:/data/flink
 
+
   deployer:
-    build: .
-    image: nielsdenissen/flink-deployer:master
+    build:
+      context: .
+      dockerfile: Dockerfile
     depends_on:
       - jobmanager
       - taskmanager
     # Deploy
-    command: 
+    command:
       - "deploy"
       - "--file-name"
       - "/tmp/flink-stateful-wordcount-assembly-0.jar"
@@ -40,7 +42,7 @@ services:
       - "--program-args"
       - "--intervalMs 1000"
     # Update
-    # command: 
+    # command:
     #   - "update"
     #   - "--job-name-base"
     #   - "Windowed WordCount"
@@ -59,5 +61,5 @@ services:
       - ./flink-sample-job/target/scala-2.11/:/tmp
     environment:
       - FLINK_BASE_URL=http://jobmanager:8081
-    links: 
+    links:
       - jobmanager
